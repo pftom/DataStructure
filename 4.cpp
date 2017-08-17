@@ -16,7 +16,7 @@ ElemType DeleteBetweenSAndT(SqList L, ElemType s, ElemType t) {
 
   for (i = 0; i < len; i++) {
     ElemType data = L.data[i];
-    if (data <= s || data >= t) {
+    if (data < s || data > t) {
       arr[cnt++] = data;
     }
   }

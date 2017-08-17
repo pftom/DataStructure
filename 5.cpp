@@ -1,3 +1,5 @@
+
+//一般考虑时空复杂度都要相对较低即可。
 ElemType DeleteBetweenSAndTIncludeSAndT(SqList L, ElemType s, ElemType t) {
   if (L.data.length == 0) {
     printf("L is empty!");
@@ -24,3 +26,4 @@ ElemType DeleteBetweenSAndTIncludeSAndT(SqList L, ElemType s, ElemType t) {
   L.data = arr;
   return L;
 }
+

@@ -1,25 +1,20 @@
-ElemType DeleteRep(SqList L) {
-  int i;
-  int len = L.data.length;
-  int total = 0;
-  ElemType arr[len];
-  bool flag = false;
+#include <iostream>
 
-  for (i = 0; i < len; i++) {
-    for(int j = 0; j < total; j++) {
-      if (arr[j] == L.data[i]) {
-        flag = true;
-      }
-    }
+#include <cstdio>
 
-    if (!flag) {
-      arr[total++] = L.data[i];
-    }
+using namespace std;
 
-    flag = false;
+int main() {
+  int n;
+  scanf("%d", &n);
+
+  int arr[n];
+  for (int i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
   }
 
-  L.data = arr;
-
-  return L;
+  int lastIndex = 0;
+  for (int i = 1; i < n; i++) {
+    
+  }
 }
